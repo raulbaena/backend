@@ -2,7 +2,7 @@
 
 ## Descripcio 
 
-raulbaena/ssh:ldapserver --> Servidor ldap que proveira usuaris per connectarse per ssh. Aquesta maquina conte una base de dades anomenada dc=edt,dc=org.
+raulbaena/ssh:ldapserver --> Servidor ldap que proveira usuaris Aquesta maquina conte una base de dades anomenada dc=edt,dc=org.
 
 
 ## Configuracio
