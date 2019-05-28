@@ -1,6 +1,6 @@
 # PRACTICA SAMBA, LDAP BACKEND
 
-# ARQUITECTURA
+## ARQUITECTURA
 
 Disposem de un servidor samba i un servidor LDAP. Aquest servidor LDAP fara de backend al servidor Samba. Tambe disposem de un hostpam amb el qual farem les proves del funcionament dels servidors. Tots aquests equips estan dintre d'una intranet anomenada sambanet. 
 
@@ -10,7 +10,6 @@ raulbaena/backend:samba --> Servidor samba amb el qual es comparteixen els direc
 
 raulbaena/backend:ldapserver --> Servidor ldap amb usuaris/as. Aquest servidor samba actua com a servidor backend
 
-raulbaena/backend:hostpam --> Host que permet l'autenticacio amb usuaris de ldap per montar els recursos.
 
 ## Implementacio 
 
@@ -233,3 +232,9 @@ MYGROUP
 [root@samba docker]# 
 ```
 
+## Execució de tota la infraestructura
+```
+docker network create sambanet
+docker run --rm --name ldap -h ldap --network sambanet -d raulbaena/backend:ldapserver
+docker run --rm --name samba -h samba --network sambanet -d raulbaena/backend:samba
+```
