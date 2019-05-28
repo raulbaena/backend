@@ -1,6 +1,6 @@
 # PRACTICA SAMBA, LDAP BACKEND
 
-#ARQUITECTURA
+# ARQUITECTURA
 
 Disposem de un servidor samba i un servidor LDAP. Aquest servidor LDAP fara de backend al servidor Samba. Tambe disposem de un hostpam amb el qual farem les proves del funcionament dels servidors. Tots aquests equips estan dintre d'una intranet anomenada sambanet. 
 
