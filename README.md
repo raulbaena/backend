@@ -236,5 +236,5 @@ MYGROUP
 ```
 docker network create sambanet
 docker run --rm --name ldap -h ldap --network sambanet -d raulbaena/backend:ldapserver
-docker run --rm --name samba -h samba --network sambanet -d raulbaena/backend:samba
+docker run --rm --name samba -h samba --network sambanet -it raulbaena/backend:samba
 ```
